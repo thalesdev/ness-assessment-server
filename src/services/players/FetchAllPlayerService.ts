@@ -11,7 +11,6 @@ export async function FetchAllPlayerService() {
     });
     return players;
   } catch (err) {
-    console.log(err)
     throw new ServiceError({
       message: err.message
     })

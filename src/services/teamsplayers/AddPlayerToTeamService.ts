@@ -23,6 +23,7 @@ export async function AddPlayerToTeamService({
   const teamsRepository = getRepository(Team)
   const playersTeamsRepository = getRepository(PlayerTeam)
 
+
   const player = await playersRepository.findOne(playerId)
   const team = await teamsRepository.findOne(teamId)
   if (!player) throw new ServiceError({
