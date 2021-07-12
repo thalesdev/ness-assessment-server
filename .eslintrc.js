@@ -24,6 +24,8 @@ module.exports = {
         ts: "never",
       },
     ],
+    "class-methods-use-this": "never",
+    "import/prefer-default-export": "never"
   },
   settings: {
     "import/resolver": {
